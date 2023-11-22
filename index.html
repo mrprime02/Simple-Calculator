@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Simple Calculator</h1>
+   <div class="main">
+      <input placeholder="0" type="text" id ="result">
+      <div class="btn">
+         <input type="button" value = 'C' onclick = "calClear()">
+         <input type="button" value = '%' onclick = "displayData('%')">
+         <input type="button" value = '←' onclick ="Back('←')">
+         <input type="button" value = '/' onclick = "displayData('/')">
+         <br>
+         <input type="button" value = '7' onclick = "displayData('7')">
+         <input type="button" value = '8' onclick = "displayData('8')">
+         <input type="button" value = '9' onclick = "displayData('9')">
+         <input type="button" value = '&#215;' onclick = "displayData('*')">
+         <br>
+         <input type="button" value = '4' onclick = "displayData('4')">
+         <input type="button" value = '5' onclick = "displayData('5')">
+         <input type="button" value = '6' onclick = "displayData('6')">
+         <input type="button" value = '&#8722;' onclick = "displayData('-')">
+         <br>
+         <input type="button" value = '1' onclick = "displayData('1')">
+         <input type="button" value = '2' onclick = "displayData('2')">
+         <input type="button" value = '3' onclick = "displayData('3')">
+         <input type="button" value = '&#43;' onclick = "displayData('+')">
+         <br>
+         <input type="button" value = 'DEL'onclick = "removeLast()">
+         <input type="button" value = '0' onclick = "displayData('0')">
+         <input type="button" value = '.' onclick = "displayData('.')">
+         <input type="button" value = '&#61;' onclick = "calResult()">
+      </div>
+   </div>
+</body>
+<script src="./main.js"></script>
+</html>
